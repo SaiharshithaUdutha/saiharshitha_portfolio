@@ -8,8 +8,6 @@ I am a passionate software developer interested in web development, backend deve
 
 ## 🛠️ Technologies Used
 
-* React.js
-* TypeScript
 * HTML5
 * CSS3
 * Tailwind CSS
