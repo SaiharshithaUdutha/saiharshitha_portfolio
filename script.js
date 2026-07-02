@@ -93,38 +93,3 @@
         
         window.addEventListener('scroll', animateSkillBars);
 
-
-        emailjs.init({
-    publicKey: "OG0sAfKXd0xVtcmvO",
-    });
-
-document
-    .getElementById("contact-form")
-    .addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        emailjs.sendForm(
-            "service_8z09o6b",
-            "template_53ijxdl",
-            this
-        )
-        .then(() => {
-            alert("Message Sent Successfully!");
-            this.reset();
-        })
-        .catch((error) => {
-            console.error("FAILED...", error);
-            alert("Failed to send message. Check console for details.");
-        });
-    });
-
-
-const btn = document.querySelector("#contact-form button");
-
-btn.innerHTML = "✓ Message Sent";
-btn.disabled = true;
-
-setTimeout(() => {
-    btn.innerHTML = 'Send Message <i class="fas fa-paper-plane ml-2"></i>';
-    btn.disabled = false;
-}, 3000);
